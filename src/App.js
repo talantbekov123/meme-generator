@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="nav">
+        <img src="./logo.png" />
+        <h2>Meme Generator</h2>
+        <div>React Course - Project 3</div>
+      </div>
+
+      <form className='container'>
+        <div className='item-1'>
+          <div className='inputText'>
+          Top text
+          </div>
+          <input type='text' placeholder='Shut up'></input>
+        </div>
+        <div className='item-2'>
+        <div className='inputText'>
+          Bottom text
+          </div>
+          <input type='text' placeholder='And take my money'></input>
+        </div>
+        <div className='item-3'>
+          <input className='submitText' type='submit' value="Get a new meme image 🖼"></input>
+
+        </div>
+      </form>
+
+      <img className='image' src="meme.jpeg"/>
     </div>
   );
 }
